@@ -14,10 +14,10 @@ tip = float(0)
 total_to_pay = float(0)
 if level_of_service == 'good':
     tip = float(.20)
-    elif level_of_service == 'fair':
-        tip = float(.15)
-        elif level_of_service == 'bad':
-            tip = float(.10)
+elif level_of_service == 'fair':
+    tip = float(.15)
+elif level_of_service == 'bad':
+    tip = float(.10)
 tip = bill * tip
 total_to_pay = bill + tip
 
