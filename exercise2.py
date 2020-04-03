@@ -22,8 +22,11 @@ elif level_of_service == 'bad':
     tip = float(.10)
 tip = bill * tip
 total_to_pay = bill + tip
+# Determine amount per person
+individual_total = total_to_pay / float(bill_split)
 
 
-# Output the tip amount based on level of service
+# Output the tip amount, total with tip, and the amount to pay per person
 print(f'Tip amount: ${"%.2f" % tip}')
 print(f'Total amount: ${"%.2f" % total_to_pay}')
+print(f'Amount per person: ${"%.2f" % individual_total}')
