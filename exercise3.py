@@ -8,16 +8,20 @@
 # Setup
 coin_amount = 0
 tally_message = f'You have {coin_amount} coins.'
-coin_prompt = input('Would you lke another? ').lower()
-final_message = 'Goodbye!'
 
-# Perform Operation
 # Output tally
 print(tally_message)
 
-# Continue asking user for coins until they answer "no"
+# Ask if user wants another
+coin_prompt = ''
+final_message = 'Goodbye!'
+
+# Perform Operation
+# Continue asking user for another, until response is "no"
+
 while coin_prompt == 'yes':         # Ask user for coin 
-    coin_amount = coin_amount + 1           
+    coin_prompt = input('Would you lke another? ').lower()
+    coin_amount += 1           
     print(tally_message)            # Print the updated tally
     if coin_prompt == 'no':          # If no stop the program
         print(final_message)
