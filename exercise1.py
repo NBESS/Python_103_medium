@@ -3,7 +3,7 @@
 
 # Setup
 bill = float(input('How much is your bill? '))
-service_message = 'Good, Fair, or Bad'
+service_message = '(Good, Fair, or Bad)'
 level_of_service = input(f'How was your service?\n{service_message}\n').lower()
 
 # Calculate the tip and determine the level of service
