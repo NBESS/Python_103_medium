@@ -29,6 +29,7 @@ print(shape_char_width)
 # length of shape
 # thus allowing the "spaces" to be enclosed in, "shape_char,'*' 
 
+# Only add opening for shapes that have at least 3 rows
 if height > 2:
     while count < 2:
         shape_char_height += '*'
