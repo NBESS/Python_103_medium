@@ -4,24 +4,21 @@
 # Print out the updated tally. 
 # If "no", stop the program
 
+count = 0
+farewell = 'Goodbye!'
 
-# Setup
-coin_amount = 0
-tally_message = f'You have {coin_amount} coins.'
+#show amount in hand
+coin_total = 0
+coin_message = f'You have {coin_total} coins.'
 
-# Output tally
-print(tally_message)
+#display coin amount
+print(coin_message)
 
-# Ask if user wants another
-coin_prompt = ''
-final_message = 'Goodbye!'
+#continue asking for another until the answer is no
+while input('Would you like another: ').lower() == 'yes':
+    #add another if yes
+    coin_total += 1
+    print(f'you have {coin_total} coins')
+    count += 1
 
-# Perform Operation
-# Continue asking user for another, until response is "no"
-
-while coin_prompt == 'yes':         # Ask user for coin 
-    coin_prompt = input('Would you lke another? ').lower()
-    coin_amount += 1           
-    print(tally_message)            # Print the updated tally
-    if coin_prompt == 'no':          # If no stop the program
-        print(final_message)
+print(farewell)
